@@ -11,9 +11,9 @@ function drawTree() {
     ctx.clearRect(0, 0, canvas.width, canvas.heigth);
     let xpos = canvas.width / 2;
     let ypos = 200;
-    const height = 100;
-    const width = window.innerWidth / 15;
-    ctx.font = "36px Comic Sans MS, Comic Sans, cursive";
+    const height = canvas.height / (maxLevel + 2);
+    const width = canvas.width / (maxLevel * 2);
+    ctx.font = Math.floor(Math.max(canvas.height / 30, canvas.width / 50)) + "px Comic Sans MS, Comic Sans, cursive";
     ctx.fillStyle = "black"
     ctx.textAlign = "center"
     ctx.fillText("Merry Christmas!", xpos, ypos - 70);
