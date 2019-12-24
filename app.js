@@ -13,7 +13,7 @@ function drawTree() {
     let ypos = 200;
     const height = 100;
     const width = window.innerWidth / 15;
-    ctx.font = "36px Comic Sans MS";
+    ctx.font = "36px Comic Sans MS, Comic Sans, cursive";
     ctx.fillStyle = "black"
     ctx.textAlign = "center"
     ctx.fillText("Merry Christmas!", xpos, ypos - 70);
